@@ -1,0 +1,186 @@
+Higher-Order Functions (HOFs) in JavaScript are functions that either take other functions as arguments or return functions as their result. They are essential for writing modular and reusable code. Below is a comprehensive list of commonly used HOFs in JavaScript, along with their use cases and examples:
+
+### 1. `Array.prototype.map()`
+**Use Case:** Transforms each element in an array and returns a new array with the transformed elements.
+
+**Example:**
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const doubled = numbers.map(num => num * 2);
+console.log(doubled); // Output: [2, 4, 6, 8, 10]
+```
+
+
+### 2. `Array.prototype.filter()`
+**Use Case:** Creates a new array with elements that pass a specified test.
+
+**Example:**
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers); // Output: [2, 4]
+```
+
+
+### 3. `Array.prototype.reduce()`
+**Use Case:** Reduces an array to a single value by executing a reducer function on each element.
+
+**Example:**
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+console.log(sum); // Output: 15
+```
+
+
+### 4. `Array.prototype.forEach()`
+**Use Case:** Executes a provided function once for each array element.
+
+**Example:**
+
+```javascript
+const numbers = [1, 2, 3];
+numbers.forEach(num => console.log(num * 2));
+// Output:
+// 2
+// 4
+// 6
+```
+
+
+### 5. `Array.prototype.find()`
+**Use Case:** Returns the first element in the array that satisfies the provided testing function.
+
+**Example:**
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const firstEven = numbers.find(num => num % 2 === 0);
+console.log(firstEven); // Output: 2
+```
+
+
+### 6. `Array.prototype.findIndex()`
+**Use Case:** Returns the index of the first element that satisfies the provided testing function.
+
+**Example:**
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const index = numbers.findIndex(num => num > 3);
+console.log(index); // Output: 3
+```
+
+
+### 7. `Array.prototype.every()`
+**Use Case:** Checks if all elements in an array pass the test implemented by the provided function.
+
+**Example:**
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const allPositive = numbers.every(num => num > 0);
+console.log(allPositive); // Output: true
+```
+
+
+### 8. `Array.prototype.some()`
+**Use Case:** Checks if at least one element in the array passes the test implemented by the provided function.
+
+**Example:**
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const hasNegative = numbers.some(num => num < 0);
+console.log(hasNegative); // Output: false
+```
+
+
+### 9. `Array.prototype.sort()`
+**Use Case:** Sorts the elements of an array in place and returns the sorted array.
+
+**Example:**
+
+```javascript
+const fruits = ['banana', 'apple', 'cherry'];
+fruits.sort();
+console.log(fruits); // Output: ['apple', 'banana', 'cherry']
+```
+
+
+### 10. `Array.prototype.reverse()`
+**Use Case:** Reverses the order of the elements in an array in place.
+
+**Example:**
+
+```javascript
+const numbers = [1, 2, 3];
+numbers.reverse();
+console.log(numbers); // Output: [3, 2, 1]
+```
+
+
+### 11. `Array.prototype.flatMap()`
+**Use Case:** Maps each element using a mapping function and flattens the result into a new array.
+
+**Example:**
+
+```javascript
+const numbers = [1, 2, 3];
+const result = numbers.flatMap(num => [num, num * 2]);
+console.log(result); // Output: [1, 2, 2, 4, 3, 6]
+```
+
+
+### 12. `Function.prototype.bind()`
+**Use Case:** Creates a new function that, when called, has its `this` keyword set to the provided value.
+
+**Example:**
+
+```javascript
+const module = {
+  x: 42,
+  getX: function() {
+    return this.x;
+  }
+};
+
+const retrieveX = module.getX;
+console.log(retrieveX()); // Output: undefined
+
+const boundGetX = retrieveX.bind(module);
+console.log(boundGetX()); // Output: 42
+```
+
+
+### 13. `setTimeout()`
+**Use Case:** Executes a function after a specified delay.
+
+**Example:**
+
+```javascript
+setTimeout(() => {
+  console.log('Executed after 2 seconds');
+}, 2000);
+```
+
+
+### 14. `setInterval()`
+**Use Case:** Repeatedly executes a function with a fixed time delay between each call.
+
+**Example:**
+
+```javascript
+const intervalId = setInterval(() => {
+  console.log('This message is logged every 2 seconds');
+}, 2000);
+
+// To stop the interval
+clearInterval(intervalId);
+```
+
+
+These higher-order functions are integral to functional programming in JavaScript, enabling developers to write concise and expressive code. 

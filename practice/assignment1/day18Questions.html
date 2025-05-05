@@ -1,0 +1,96 @@
+<!--  Q7. Create a function that uses setTimeout to simulate an animation by updating the DOM at regular intervals.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation Example</title>
+    <style>
+      #box {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        position: absolute;
+        left: 0;
+        top: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="box"></div>
+
+    <script>
+      function animateBox() {
+        const box = document.getElementById("box");
+        let position = 0;
+        const interval = 20; // 20 milliseconds
+        const distance = 5; // 5 pixels per interval
+
+        function moveBox() {
+          position += distance;
+          box.style.left = position + "px";
+
+          if (position < window.innerWidth - box.offsetWidth) {
+            setTimeout(moveBox, interval);
+          }
+        }
+
+        moveBox();
+      }
+
+      // Start the animation
+      animateBox();
+    </script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Q8. Write a function that uses setTimeout to implement a simple debounce
+      mechanism for a search input field
+    </title>
+    <style>
+      #searchbar {
+        margin-top: 20px;
+        height: 30px;
+        width: 200px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" placeholder="enter name" id="searchbar" />
+
+    <script>
+      function debounce(func, delay) {
+        let timeoutId;
+        return function (...args) {
+          if (timeoutId) {
+            clearTimeout(timeoutId);
+          }
+          timeoutId = setTimeout(() => {
+            func.apply(this, args);
+          }, delay);
+        };
+      }
+
+      function handleSearch(event) {
+        const query = event.target.value;
+        console.log(`Searching for: ${query}`);
+        // Implement your search logic here
+      }
+
+      const searchInput = document.getElementById("searchbar");
+      const debouncedHandleSearch = debounce(handleSearch, 500); // 500ms delay
+
+      searchInput.addEventListener("input", debouncedHandleSearch);
+    </script>
+  </body>
+</html>

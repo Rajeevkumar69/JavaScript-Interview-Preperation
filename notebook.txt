@@ -1,0 +1,215 @@
+                   ~: Topics :~
+
+Array, Object, for-loop
+while loop,do-while loop , for-of, for-in   --done
+for-of,function-basic,function-as-expression, HOISTING -- done
+ES6 --> let, const , arrow-function, Functional Map(), Array map() --done
+TemplateLiteral_MultilineString, Destructuring Arrays, Destructuring objects --done
+callback function , Higher Order Function (HOF), map, forEach --done
+filter, find(), findIndex(), some(), sort(), every()  --done
+reduce(), chaining() --done
+function constructor  --done
+class(), classical inheritance  --done
+Ploymorphism, Encapsulation, prototype --done
+call, apply, bind method --done
+async, setTimeOut, setInterval, clearInterval --done
+Promise --done
+***comparison operator, truthy-falsy, 
+______________________________________________________________________
+______________________________________________________________________
+
+
+// Deep Copy Questions
+
+Q1. Implement a function `deepCopy(obj)` that performs a deep copy of a nested object without using JSON methods.
+
+Q2. Given a deeply nested object, write a function that clones it and modifies a nested property in the clone without affecting the original object.
+
+Q3. Implement a deep copy function that can handle circular references within an object.
+
+Q4. Write a deep copy function that preserves functions, special objects like Date, RegExp, and Maps.
+
+Q5. Implement a function to deeply clone an object that contains arrays, nested objects, and primitive values.
+
+Q6. Create a deep copy function that can handle prototype inheritance while copying an object.
+
+Q7. Implement a function that compares two deeply cloned objects to check if they are identical but not the same reference.
+
+Q8. Write a deep copy function that supports custom class instances while maintaining their methods and properties.
+
+Q9. Implement a function that deep clones an object but allows excluding certain keys from being copied.
+
+Q10. Write a utility function that takes an object, deeply clones it, and modifies specific properties in the clone dynamically.
+
+
+// Shallow Copy Questions
+
+
+Q5. Create a shallow copy function that only copies the first level of properties but leaves nested objects by reference.
+
+Q6. Demonstrate how a shallow copy behaves when copying an object containing an array of objects.
+
+Q7. Write a function that creates a shallow copy of an object and modifies a top-level property to show that the original object remains unchanged.
+
+Q8. Implement a function that compares a shallow copy and the original object to identify shared references.
+
+Q9. Write a function that accepts a shallow copy and attempts to modify a nested object, explaining why the changes reflect in the original.
+
+Q10. Create an example where shallow copying an object using the spread operator leads to unintended modifications due to reference sharing.
+
+// Currying Questions
+
+Q1. Implement a function `curry(fn)` that transforms a normal function into a curried function.
+
+Q2. Write a function that demonstrates currying by creating a curried version of a sum function that takes multiple arguments one by one.
+
+Q3. Implement a curried function that accepts three arguments one by one and returns their product.
+
+Q4. Create a curried function that takes a string and returns another function to append more strings before finally returning the complete concatenated string.
+
+Q5. Write a function that curries a given function and allows partial application of arguments.
+
+Q6. Implement a curried function that filters an array based on a provided condition.
+
+Q7. Write a function using currying to convert a normal multiplication function into a sequence of function calls.
+
+Q8. Create a curried function that formats a given date string in different formats based on provided parameters.
+
+Q9. Implement a curried function that applies different discount rates based on a category and price.
+
+Q10. Write a function that demonstrates the practical use of currying in an event listener configuration.
+
+
+
+
+
+
+
+
+
+
+
+
+______________________________________________________________________
+______________________________________________________________________
+
+
+******MySirG******
+Here are the converted questions for JavaScript programming, focusing on arrays, objects, loops, functions, and recursion:
+
+### Warm-up Programs
+1. Write a program to add two numbers.
+2. Write a program to calculate the area of a circle.
+3. Write a program to print your name at the center of the console.
+4. Write a program that takes only integer input and restricts other characters.
+
+### Elementary Tricky Programs
+5. Write a program to print `%d` using `console.log` in JavaScript.
+6. Write a program to swap two numbers.
+7. Write a program to swap two numbers without using a third variable.
+8. Write a program to check whether a number is even or odd without using the modulus (%) operator.
+9. Write a program to check even or odd without modulus and bitwise operator.
+10. Write a program to move your name with keystrokes (e.g., using event listeners).
+
+### Programs on Decision Control (if, if-else, switch)
+11. Write a program to check whether a given number is even or odd.
+12. Write a program to check whether a given number is divisible by 5 or not.
+13. Write a program to find the greater of two numbers.
+14. Write a program to find the greatest among three numbers.
+15. Write a program to find the roots of a quadratic equation.
+16. Write a program to check leap year.
+
+### Programs on Loops (while, do-while, for)
+17. Write a program to print your name 5 times on the console.
+18. Write a program to print the first 10 natural numbers.
+19. Write a program to print the first 10 natural numbers in reverse order.
+20. Write a program to print the first N natural numbers (N is given by the user).
+21. Write a program to print the first N natural numbers in reverse order (N is given by the user).
+22. Write a program to print the first 10 even natural numbers.
+23. Write a program to print the first 10 odd natural numbers.
+24. Write a program to print the first N even natural numbers.
+25. Write a program to print the first N odd natural numbers.
+26. Write a program to print the first N even natural numbers in reverse order.
+27. Write a program to print the first N odd natural numbers in reverse order.
+28. Write a program to print the multiplication table of the user’s choice.
+29. Write a program to calculate the sum of the first N natural numbers.
+30. Write a program to calculate the product of the first N natural numbers.
+31. Write a program to calculate the factorial of a number.
+32. Write a program to calculate the sum of the first N even natural numbers.
+33. Write a program to calculate the sum of the first N odd natural numbers.
+34. Write a program to calculate x to the power of y (e.g., if x is 2 and y is 3, the result will be 8).
+35. Write a program to count the digits in a given number.
+36. Write a program to calculate the sum of the digits of a given number.
+37. Write a program to reverse a number.
+38. Write a program to print all Armstrong numbers under 1000.
+39. Write a program to calculate the LCM of two numbers.
+40. Write a program to calculate the HCF of two numbers.
+41. Write a program to check whether a given number is prime or not.
+42. Write a program to print all prime numbers between two given numbers.
+43. Write a program to print all prime factors of a given number (e.g., prime factors of 36 are 2, 2, 3, 3).
+44. Write a program to print the first N terms of the Fibonacci series.
+45. Write a program to check co-prime numbers.
+46. Write a program to print N co-prime numbers.
+47. Write a program to convert a binary number to a decimal number.
+48. Write a program to convert a binary number to a decimal number with improved logic.
+49. Write a program to print the ASCII chart.
+50. Write a program to print the first n positive numbers with two bits set.
+91. Write a program to print series `1 + (1+2) + (1+2+3) + ... + (1+2+3+...+N)`.
+92. Write a program to print the first N prime numbers.
+
+### Programs on Functions
+93. Write a function to calculate the factorial of a number.
+94. Write a function to calculate the area of a circle.
+95. Write a function to print the current date.
+96. Write a function to calculate the sum of the first N natural numbers (all four ways: TNRN, TSRN, TNRS, TSRS).
+97. Write a function to calculate the sum of squares of the first N natural numbers (all four ways: TNRN, TSRN, TNRS, TSRS).
+98. Write a function to print Pascal's triangle.
+99. Write a program to express a given number as the sum of two prime numbers and print all possible solutions.
+
+### Programs on Recursion
+100. Write a recursive function to calculate the factorial of a number.
+101. Write a recursive function to find the Nth term of the Fibonacci series.
+102. Write a recursive function to sort an array.
+103. Write a recursive function to print the first N natural numbers.
+104. Write a recursive function to print the first N natural numbers in reverse order.
+105. Write a recursive function to calculate the sum of the digits of a number.
+106. Write a recursive function to calculate the sum of the squares of the digits of a number.
+107. Write a recursive function to calculate the sum of the cubes of the first N natural numbers.
+108. Write a recursive function to calculate the determinant of any order (part 1 of 3).
+109. Write a recursive function to calculate the determinant of any order (part 2 of 3).
+110. Write a recursive function to calculate the determinant of any order (part 3 of 3).
+
+### Programs on Arrays
+111. Write a program to calculate the sum of all even numbers and the sum of all odd numbers stored in an array.
+112. Write a program to find the greatest among 10 numbers stored in an array.
+113. Write a program to find the smallest among 10 numbers stored in an array.
+114. Write a program to add two matrices, each of order 3x3.
+115. Write a program to multiply two matrices, each of order 3x3.
+116. Write a program to generate 10 distinct numbers in a given range.
+117. Write a program to rotate an array by n positions.
+
+### Programs on Strings
+118. Write a program to calculate the length of a string using the `length` property.
+119. Write a program to reverse a string using a built-in method.
+120. Write a program to reverse a string without using a built-in method.
+121. Write a program to transform a string to its uppercase.
+122. Write a program to sort strings in dictionary order.
+123. Write a program to check whether a string is a palindrome or not.
+124. Write a program to count words in a sentence.
+125. Write a program to reverse a string word-wise.
+126. Write a program to remove adjacent duplicate characters from a string.
+127. Write a program to check whether a given string is alphanumeric or not.
+128. Write a program to input a variable-length string.
+129. Write a program to count vowels
+
+
+
+
+
+chatGPT template:- 
+
+
+Please give 10 programming questions {to solve the programming problem through writing code}  per topic `deep copy, shallow copy `  in JavaScript. 
+The questions must be of a medium to difficult level. Please provide all the questions at once so it is easy to copy and paste them here to Notepad. Please don't give the answer; I want only a question. 
+
+give all questions in the code panel and the questions should be in this format:- Q1. Question
